@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_text">Already a member? <font color="#800080">Log In</font></string>
+
+    <string name="termsConditions">By checking the box you agree to our <font color="#800080">Terms</font> and <font color="#800080">Conditions.</font> </string>
+</resources>
