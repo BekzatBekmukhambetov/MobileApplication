@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="get_started">Get Started</string>
+    <string name="signup_subtext">by creating a free account</string>
+    <string name="full_name">Full name</string>
+    <string name="valid_email">Valid email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Strong password</string>
+    <string name="termsConditions">By checking the box you agree to our <font color="#800080">Terms</font> and <font color="#800080">Conditions.</font> </string>
+    <string name="sign_up_button">Next ></string>
+    <string name="login_prompt">Already a member? <font color="#800080">Log In</font></string>
 </resources>
