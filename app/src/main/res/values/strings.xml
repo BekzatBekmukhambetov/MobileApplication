@@ -9,4 +9,10 @@
     <string name="termsConditions">By checking the box you agree to our <font color="#800080">Terms</font> and <font color="#800080">Conditions.</font> </string>
     <string name="sign_up_button">Next ></string>
     <string name="login_prompt">Already a member? <font color="#800080">Log In</font></string>
+    <string name="login_description">sign in to access to your account</string>
+    <string name="login_email">Enter your email</string>
+    <string name="login_password">Password</string>
+    <string name="register_prompt">New member? <font color="#800080">Register Now</font></string>
+    <string name="remember_tick">Remember Me</string>
+    <string name="forget_description"> <font color="#800080"> Forget Password? </font></string>
 </resources>
