@@ -6,19 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <!-- Image for screen 2-->
+    <!-- Image for screen 2 -->
     <ImageView
         android:id="@+id/signup_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="62dp"
         android:src="@drawable/signup_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/signup_title"
@@ -44,14 +41,9 @@
         app:layout_constraintStart_toStartOf="@id/signup_title"
         app:layout_constraintTop_toBottomOf="@id/signup_title" />
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_full_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        style="@style/common_text_input_style"
         android:hint="@string/full_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,13 +54,10 @@
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        style="@style/common_text_input_style"
         android:hint="@string/valid_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,11 +70,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_phone_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        style="@style/common_text_input_style"
         android:hint="@string/phone_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,13 +81,10 @@
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        style="@style/common_text_input_style"
         android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,47 +95,27 @@
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/common_checkbox_style"
+        android:text="@string/termsConditions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
 
 
-
-      <CheckBox
-          android:id="@+id/checkbox"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="29dp"
-          android:layout_marginTop="19dp"
-          android:layout_marginEnd="30dp"
-          android:text="@string/termsConditions"
-          android:textSize="10dp"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/input_password" />
-
-
-
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="15dp"
+        style="@style/common_button_style"
         android:text="@string/sign_up_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkbox" />
 
-
     <TextView
         android:id="@+id/BottomText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="53dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginTop="25dp"
+        style="@style/bottom_text_style"
         android:text="@string/login_prompt"
-        android:textColor="@android:color/black"
-        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_1" />
