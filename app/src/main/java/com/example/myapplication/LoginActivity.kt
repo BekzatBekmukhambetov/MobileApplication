@@ -12,7 +12,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun onClickGoSignUp(view : View){
-    val intent = Intent(this,SignUpActivity::class.java )
+    val intent = Intent(this,SignUpActivity::class.java)
         startActivity(intent)
         finish()
     }
