@@ -47,4 +47,5 @@ class CredentialsManagerTest {
         val isPasswordValid = credentialsManager.isPasswordValid("qwerty1234")
         assertEquals(true,isPasswordValid)
     }
+
 }
