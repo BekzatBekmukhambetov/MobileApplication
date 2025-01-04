@@ -17,6 +17,8 @@ class LoginActivity : AppCompatActivity() {
 
     private val loginButton: MaterialButton
         get() = findViewById(R.id.button_1)
+
+    val credentialsManager = CredentialsManager.instance
     
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,13 +50,14 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-        if (email == "test@te.st" && password == "1234") {
+        val user = credentialsManager.credentialsMap[email]
+        if (user != null && user.password == password) {
             emailInput.error = null
             passwordInput.error = null
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        } else if (email.isNotEmpty() && password.isNotEmpty()) {
+        } else {
             passwordInput.error = "Incorrect email or password"
         }
     }
