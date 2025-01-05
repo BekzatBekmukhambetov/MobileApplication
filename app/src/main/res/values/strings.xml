@@ -15,4 +15,6 @@
     <string name="register_prompt">New member? <font color="#800080">Register Now</font></string>
     <string name="remember_tick">Remember Me</string>
     <string name="forget_description"> <font color="#800080"> Forget Password? </font></string>
+    <string name="fragment_a_text">FragmentA!!!</string>
+    <string name="fragment_b_text">FragmentB!!!</string>
 </resources>
