@@ -1,9 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.fragments.FragmentA
+import com.example.myapplication.fragments.FragmentB
 
 
 class MainActivity : AppCompatActivity() {

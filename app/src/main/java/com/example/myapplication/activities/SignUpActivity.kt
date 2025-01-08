@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.view.View
 import com.google.android.material.textfield.TextInputLayout
 import com.google.android.material.button.MaterialButton
 import android.widget.Toast
+import com.example.myapplication.CredentialsManager
+import com.example.myapplication.R
 
 
 class SignUpActivity : AppCompatActivity() {

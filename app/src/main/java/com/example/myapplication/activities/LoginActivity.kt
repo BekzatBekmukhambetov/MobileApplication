@@ -1,9 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.myapplication.CredentialsManager
+import com.example.myapplication.R
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputLayout
 
@@ -64,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
 
 
     fun onClickGoSignUp(view : View){
-    val intent = Intent(this,SignUpActivity::class.java)
+    val intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
         finish()
     }

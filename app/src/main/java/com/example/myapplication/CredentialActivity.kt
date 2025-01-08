@@ -3,6 +3,9 @@ package com.example.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.myapplication.fragments.LoginFragment
+import com.example.myapplication.fragments.RecipeListFragment
+import com.example.myapplication.fragments.SignUpFragment
 
 
 class CredentialActivity : AppCompatActivity() {
@@ -31,5 +34,9 @@ class CredentialActivity : AppCompatActivity() {
 
     fun showSignUpFragment() {
         showFragment(SignUpFragment())
+    }
+
+    fun showRecipeListFragment() {
+        showFragment(RecipeListFragment())
     }
 }

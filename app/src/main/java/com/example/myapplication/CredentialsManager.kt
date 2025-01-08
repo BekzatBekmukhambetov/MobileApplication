@@ -1,6 +1,7 @@
 // Put your package name here. Check your activity for reference.
 package com.example.myapplication
 
+import com.example.myapplication.models.User
 
 
 class CredentialsManager {
