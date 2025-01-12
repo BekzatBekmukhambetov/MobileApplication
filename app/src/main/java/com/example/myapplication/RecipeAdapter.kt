@@ -10,9 +10,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.models.Recipe
 
 class RecipeAdapter(
-    private val recipes: List<Recipe>,
+    private var recipes: List<Recipe>,
     private val listener: OnRecipeClickListener
 ) : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
+
+    fun updateRecipes(newRecipes: List<Recipe>) {
+        recipes = newRecipes
+        notifyDataSetChanged()
+    }
 
     interface OnRecipeClickListener {
         fun onItemClicked(recipeId: Int)
@@ -48,4 +53,6 @@ class RecipeAdapter(
             }
         }
     }
+
+
 }
