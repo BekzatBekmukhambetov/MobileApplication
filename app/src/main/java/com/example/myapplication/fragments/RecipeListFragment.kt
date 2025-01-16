@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.RecipeAdapter
-import com.example.myapplication.models.Recipe
 import com.example.myapplication.models.RecipeViewModel
 import kotlinx.coroutines.launch
 
